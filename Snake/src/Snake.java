@@ -239,7 +239,7 @@ public class Snake extends GraphicsProgram{
 			updatePlayer(foodReached);
 			if(foodReached != -1) 
 			{
-				m_fps+=0.75;
+				m_fps+=1;
 			}
 				nextFrame = 1000.0 / m_fps;
 			}

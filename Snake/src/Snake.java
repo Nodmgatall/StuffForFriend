@@ -42,15 +42,14 @@ public class Snake extends GraphicsProgram{
 		addMouseListeners();
 		setTitle("Snake");
 		m_randomGen = new Random();
-		
-		setSize(m_fieldSizeY * m_tileSize, m_fieldSizeY * m_tileSize);
-		pause(1);
 		m_next_food = new GameObject[10];
 		
 		initGame();
 	}
 	public void initGame() 
 	{
+		setSize(m_fieldSizeX * m_tileSize, m_fieldSizeY * m_tileSize);
+		pause(1);
 		m_field = new GameObject(m_fieldSizeX * m_tileSize, m_fieldSizeY * m_tileSize);
 		add(m_field);
 		m_sizePlayer = 3;

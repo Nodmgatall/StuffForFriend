@@ -4,8 +4,6 @@ import java.awt.event.*;
 
 import java.util.Random;
 
-import javax.swing.*;
-
 public class Snake extends GraphicsProgram{
 	
 	/**

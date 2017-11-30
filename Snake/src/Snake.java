@@ -36,6 +36,8 @@ public class Snake extends GraphicsProgram{
 	
 	public void init() 
 	{
+		setSize(m_fieldSizeX * m_tileSize, m_fieldSizeY * m_tileSize);
+		pause(10);
 		addKeyListeners();
 		addMouseListeners();
 		setTitle("Snake");
@@ -47,7 +49,7 @@ public class Snake extends GraphicsProgram{
 	public void initGame() 
 	{
 		setSize(m_fieldSizeX * m_tileSize, m_fieldSizeY * m_tileSize);
-		pause(1);
+		pause(10);
 		m_field = new GameObject(m_fieldSizeX * m_tileSize, m_fieldSizeY * m_tileSize);
 		add(m_field);
 		m_sizePlayer = 3;
